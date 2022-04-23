@@ -1,7 +1,7 @@
 ---
-name: First Android app issue template
-about: Issue template for Create your first Android app
-title: 'First Android app: Android Basics in Compose'
+name: Practice problems Unit 1 Pathway 1 issue template
+about: Issue template for Unit 1 | Pathway 1 | Practice Problems
+title: 'Practice problems Unit 1 Pathway 1: Android Basics in Compose'
 labels: ''
 assignees: ''
 

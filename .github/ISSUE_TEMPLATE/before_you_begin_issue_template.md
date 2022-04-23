@@ -1,6 +1,6 @@
 ---
 name: Before you begin issue template
-about: 'Issue template for Before you begin'
+about: Issue template for Before you begin
 title: 'Before you begin: Android Basics in Compose'
 labels: ''
 assignees: ''

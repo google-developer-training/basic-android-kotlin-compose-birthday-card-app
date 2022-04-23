@@ -1,6 +1,6 @@
 ---
 name: Practice problems issue template
-about: Issue template for Unit 1 | Pathway 1 | Practice Problems 
+about: Issue template for Unit 1 | Pathway 1 | Practice Problems
 title: 'Practice problems: Android Basics in Compose'
 labels: ''
 assignees: ''
