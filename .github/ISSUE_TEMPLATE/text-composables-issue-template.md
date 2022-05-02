@@ -1,7 +1,7 @@
 ---
 name: Text composables issue template
 about: 'Issue template for Build a simple app with text composables '
-title: 'Text composables: Android Basics in Compose'
+title: 'Text composables: Android Basics with Compose'
 labels: ''
 assignees: ''
 

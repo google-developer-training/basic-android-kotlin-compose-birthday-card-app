@@ -1,7 +1,7 @@
 ---
 name: Business Card app issue template
 about: Issue template for Create a Business Card app
-title: 'Business Card app: Android Basics in Compose'
+title: 'Business Card app: Android Basics with Compose'
 labels: ''
 assignees: ''
 

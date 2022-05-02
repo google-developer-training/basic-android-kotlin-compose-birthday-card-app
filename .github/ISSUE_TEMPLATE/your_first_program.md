@@ -1,7 +1,7 @@
 ---
 name: Your first program issue template
 about: 'Issue template for Your first program in Kotlin'
-title: 'Your first program: Android Basics in Compose'
+title: 'Your first program: Android Basics with Compose'
 labels: ''
 assignees: ''
 

@@ -1,7 +1,7 @@
 ---
 name: First Android app issue template
 about: Issue template for Create your first Android app
-title: 'First Android app: Android Basics in Compose'
+title: 'First Android app: Android Basics with Compose'
 labels: ''
 assignees: ''
 

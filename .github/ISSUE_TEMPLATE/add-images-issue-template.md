@@ -1,7 +1,7 @@
 ---
 name: Add images issue template
 about: Issue template for Add an image to your Android app
-title: 'Add images: Android Basics in Compose'
+title: 'Add images: Android Basics with Compose'
 labels: ''
 assignees: ''
 

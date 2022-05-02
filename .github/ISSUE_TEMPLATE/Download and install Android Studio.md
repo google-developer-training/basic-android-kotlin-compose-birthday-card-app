@@ -1,7 +1,7 @@
 ---
 name: Install Android Studio issue template
 about: Issue template for Download and install Android Studio
-title: 'Install Android Studio: Android Basics in Compose'
+title: 'Install Android Studio: Android Basics with Compose'
 labels: ''
 assignees: ''
 

@@ -1,7 +1,7 @@
 ---
 name: Run your first app issue template
 about: Issue template for Run your first app on the Android Emulator
-title: 'Run your first app: Android Basics in Compose'
+title: 'Run your first app: Android Basics with Compose'
 labels: ''
 assignees: ''
 

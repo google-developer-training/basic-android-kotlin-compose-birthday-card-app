@@ -1,7 +1,7 @@
 ---
 name: Connect your Android device issue template
 about: Issue template for How to connect your Android device
-title: 'Connect your Android device: Android Basics in Compose'
+title: 'Connect your Android device: Android Basics with Compose'
 labels: ''
 assignees: ''
 

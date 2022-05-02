@@ -1,7 +1,7 @@
 ---
 name: Functions in Kotlin issue template
 about: Issue template for Create and use functions in Kotlin
-title: 'Functions in Kotlin: Android Basics in Compose'
+title: 'Functions in Kotlin: Android Basics with Compose'
 labels: ''
 assignees: ''
 

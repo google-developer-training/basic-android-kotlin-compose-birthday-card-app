@@ -1,7 +1,7 @@
 ---
 name: Variables in Kotlin issue template
 about: Issue template for Create and use variables in Kotlin
-title: 'Variables in Kotlin: Android Basics in Compose'
+title: 'Variables in Kotlin: Android Basics with Compose'
 labels: ''
 assignees: ''
 
