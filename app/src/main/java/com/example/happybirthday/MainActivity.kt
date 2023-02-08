@@ -60,19 +60,18 @@ fun BirthdayGreetingWithText(message: String, from: String, modifier: Modifier =
         modifier = modifier.fillMaxSize(),
         verticalArrangement = Arrangement.Top,
         horizontalAlignment = Alignment.CenterHorizontally
-    )
-    {
+    ) {
         Text(
             text = message,
             fontSize = 36.sp,
             modifier = Modifier
-                .padding(start = 16.dp, top = 16.dp)
+                .padding(top = 16.dp)
         )
         Text(
             text = from,
             fontSize = 24.sp,
             modifier = Modifier
-                .padding(start = 16.dp, end = 16.dp)
+                .padding(top = 16.dp)
         )
     }
 }
@@ -81,13 +80,13 @@ fun BirthdayGreetingWithText(message: String, from: String, modifier: Modifier =
 fun BirthdayGreetingWithImage(message: String, from: String, modifier: Modifier = Modifier) {
     val image = painterResource(id = drawable.androidparty)
     // Create a box to overlap image and texts
-    Box (modifier = modifier.fillMaxSize()) {
+    Box {
         Image(
             painter = image,
             contentDescription = null,
             contentScale = ContentScale.Crop
         )
-        BirthdayGreetingWithText(message = message, from = from)
+        BirthdayGreetingWithText(message = message, from = from, modifier)
     }
 }
 
