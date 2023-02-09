@@ -36,7 +36,6 @@ import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
-import com.example.happybirthday.R.drawable
 import com.example.happybirthday.ui.theme.HappyBirthdayTheme
 
 class MainActivity : ComponentActivity() {
@@ -78,7 +77,7 @@ fun BirthdayGreetingWithText(message: String, from: String, modifier: Modifier =
 
 @Composable
 fun BirthdayGreetingWithImage(message: String, from: String, modifier: Modifier = Modifier) {
-    val image = painterResource(id = drawable.androidparty)
+    val image = painterResource(id = R.drawable.androidparty)
     // Create a box to overlap image and texts
     Box {
         Image(
@@ -86,7 +85,7 @@ fun BirthdayGreetingWithImage(message: String, from: String, modifier: Modifier 
             contentDescription = null,
             contentScale = ContentScale.Crop
         )
-        BirthdayGreetingWithText(message = message, from = from, modifier)
+        BirthdayGreetingWithText(message = message, from = from, modifier = modifier)
     }
 }
 
