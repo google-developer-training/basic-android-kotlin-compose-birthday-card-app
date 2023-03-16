@@ -48,7 +48,8 @@ class MainActivity : ComponentActivity() {
                     modifier = Modifier.fillMaxSize(),
                     color = MaterialTheme.colorScheme.background
                 ) {
-                    BirthdayGreetingWithImage( stringResource(R.string.happy_birthday_text),
+                    BirthdayGreetingWithImage(
+                        stringResource(R.string.happy_birthday_text),
                         stringResource(R.string.signature_text)
                     )
                 }
@@ -61,32 +62,37 @@ class MainActivity : ComponentActivity() {
 fun BirthdayGreetingWithText(message: String, from: String, modifier: Modifier = Modifier) {
     // Create a column so that texts don't overlap
     Column(
-        modifier = modifier.fillMaxSize(),
-        verticalArrangement = Arrangement.Top,
+        modifier = modifier
+            .fillMaxSize()
+            .padding(8.dp),
+        verticalArrangement = Arrangement.Center,
         horizontalAlignment = Alignment.CenterHorizontally
     ) {
         Text(
             text = message,
-            fontSize = 36.sp,
+            fontSize = 100.sp,
+            lineHeight = 110.sp,
             modifier = Modifier
                 .padding(top = 16.dp)
         )
         Text(
             text = from,
-            fontSize = 24.sp,
+            fontSize = 36.sp,
             modifier = Modifier
                 .padding(top = 16.dp)
+                .padding(end = 16.dp)
+                .align(alignment = Alignment.End)
+
         )
     }
 }
 
 @Composable
 fun BirthdayGreetingWithImage(message: String, from: String, modifier: Modifier = Modifier) {
-    val image = painterResource(id = R.drawable.androidparty)
     // Create a box to overlap image and texts
     Box {
         Image(
-            painter = image,
+            painter = painterResource(id = R.drawable.androidparty),
             contentDescription = null,
             contentScale = ContentScale.Crop
         )
@@ -98,7 +104,9 @@ fun BirthdayGreetingWithImage(message: String, from: String, modifier: Modifier 
 @Composable
 private fun BirthdayCardPreview() {
     HappyBirthdayTheme {
-        BirthdayGreetingWithImage( stringResource(R.string.happy_birthday_text),
-            stringResource(R.string.signature_text))
+        BirthdayGreetingWithImage(
+            stringResource(R.string.happy_birthday_text),
+            stringResource(R.string.signature_text)
+        )
     }
 }
