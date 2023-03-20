@@ -62,16 +62,15 @@ class MainActivity : ComponentActivity() {
 fun BirthdayGreetingWithText(message: String, from: String, modifier: Modifier = Modifier) {
     // Create a column so that texts don't overlap
     Column(
+        verticalArrangement = Arrangement.Center,
         modifier = modifier
             .fillMaxSize()
-            .padding(8.dp),
-        verticalArrangement = Arrangement.Center,
-        horizontalAlignment = Alignment.CenterHorizontally
+            .padding(8.dp)
     ) {
         Text(
             text = message,
             fontSize = 100.sp,
-            lineHeight = 110.sp,
+            lineHeight = 116.sp,
             modifier = Modifier
                 .padding(top = 16.dp)
         )
@@ -94,9 +93,10 @@ fun BirthdayGreetingWithImage(message: String, from: String, modifier: Modifier 
         Image(
             painter = painterResource(id = R.drawable.androidparty),
             contentDescription = null,
-            contentScale = ContentScale.Crop
+            contentScale = ContentScale.Crop,
+            modifier = modifier
         )
-        BirthdayGreetingWithText(message = message, from = from, modifier = modifier)
+        BirthdayGreetingWithText(message = message, from = from)
     }
 }
 
