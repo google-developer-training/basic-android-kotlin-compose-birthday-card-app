@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2023 The Android Open Source Project
+ * Copyright (C) 2023 The Android Open Source Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -48,7 +48,7 @@ class MainActivity : ComponentActivity() {
                     modifier = Modifier.fillMaxSize(),
                     color = MaterialTheme.colorScheme.background
                 ) {
-                    BirthdayGreetingWithImage(
+                    BirthdayGreetingImage(
                         stringResource(R.string.happy_birthday_text),
                         stringResource(R.string.signature_text)
                     )
@@ -59,7 +59,7 @@ class MainActivity : ComponentActivity() {
 }
 
 @Composable
-fun BirthdayGreetingWithText(message: String, from: String, modifier: Modifier = Modifier) {
+fun BirthdayGreetingText(message: String, from: String, modifier: Modifier = Modifier) {
     // Create a column so that texts don't overlap
     Column(
         verticalArrangement = Arrangement.Center,
@@ -87,16 +87,17 @@ fun BirthdayGreetingWithText(message: String, from: String, modifier: Modifier =
 }
 
 @Composable
-fun BirthdayGreetingWithImage(message: String, from: String, modifier: Modifier = Modifier) {
+fun BirthdayGreetingImage(message: String, from: String, modifier: Modifier = Modifier) {
     // Create a box to overlap image and texts
     Box {
         Image(
             painter = painterResource(id = R.drawable.androidparty),
             contentDescription = null,
             contentScale = ContentScale.Crop,
+            alpha = 0.5F,
             modifier = modifier
         )
-        BirthdayGreetingWithText(message = message, from = from)
+        BirthdayGreetingText(message = message, from = from)
     }
 }
 
@@ -104,7 +105,7 @@ fun BirthdayGreetingWithImage(message: String, from: String, modifier: Modifier 
 @Composable
 private fun BirthdayCardPreview() {
     HappyBirthdayTheme {
-        BirthdayGreetingWithImage(
+        BirthdayGreetingImage(
             stringResource(R.string.happy_birthday_text),
             stringResource(R.string.signature_text)
         )
