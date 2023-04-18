@@ -88,13 +88,12 @@ fun GreetingText(message: String, from: String, modifier: Modifier = Modifier) {
 @Composable
 fun GreetingImage(message: String, from: String, modifier: Modifier = Modifier) {
     // Create a box to overlap image and texts
-    Box {
+    Box(modifier) {
         Image(
             painter = painterResource(id = R.drawable.androidparty),
             contentDescription = null,
             contentScale = ContentScale.Crop,
-            alpha = 0.5F,
-            modifier = modifier
+            alpha = 0.5F
         )
         GreetingText(
             message = message,
