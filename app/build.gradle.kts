@@ -14,9 +14,10 @@
  * limitations under the License.
  */
 @file:Suppress("UnstableApiUsage")
+
 plugins {
-    id ("com.android.application")
-    id ("org.jetbrains.kotlin.android")
+    id("com.android.application")
+    id("org.jetbrains.kotlin.android")
 }
 
 android {
@@ -39,7 +40,10 @@ android {
     buildTypes {
         release {
             isMinifyEnabled = false
-            proguardFiles (getDefaultProguardFile("proguard-android-optimize.txt"), "proguard-rules.pro")
+            proguardFiles(
+                getDefaultProguardFile("proguard-android-optimize.txt"),
+                "proguard-rules.pro"
+            )
         }
     }
     compileOptions {
@@ -53,24 +57,25 @@ android {
         compose = true
     }
     composeOptions {
-        kotlinCompilerExtensionVersion = "1.3.2"
+        kotlinCompilerExtensionVersion = "1.8.21"
     }
-    packagingOptions {
+    packaging {
         resources {
-            excludes += ("/META-INF/{AL2.0,LGPL2.1}")
+            excludes += "/META-INF/{AL2.0,LGPL2.1}"
         }
     }
 }
 
 dependencies {
+    implementation(platform("androidx.compose:compose-bom:2023.05.01"))
+    implementation("androidx.compose.material3:material3")
+    implementation("androidx.compose.ui:ui")
+    implementation("androidx.compose.ui:ui-graphics")
+    implementation("androidx.compose.ui:ui-tooling-preview")
 
-    implementation ("androidx.core:core-ktx:1.10.1")
-    implementation ("androidx.activity:activity-compose:1.7.2")
-    implementation (platform("androidx.compose:compose-bom:2022.10.00"))
-    implementation ("androidx.compose.ui:ui")
-    implementation ("androidx.compose.ui:ui-graphics")
-    implementation ("androidx.compose.ui:ui-tooling-preview")
-    implementation ("androidx.compose.material3:material3")
-    androidTestImplementation (platform("androidx.compose:compose-bom:2022.10.00"))
-    debugImplementation ("androidx.compose.ui:ui-tooling")
+    implementation("androidx.activity:activity-compose:1.7.2")
+    implementation("androidx.core:core-ktx:1.10.1")
+
+    debugImplementation("androidx.compose.ui:ui-test-manifest")
+    debugImplementation("androidx.compose.ui:ui-tooling")
 }
