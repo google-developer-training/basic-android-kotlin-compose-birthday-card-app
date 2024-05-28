@@ -64,7 +64,7 @@ fun GreetingText(message: String, from: String, modifier: Modifier = Modifier) {
     // Create a column so that texts don't overlap
     Column(
         verticalArrangement = Arrangement.Center,
-        modifier = modifier
+        modifier = modifier.fillMaxSize()
     ) {
         Text(
             text = message,
@@ -88,12 +88,13 @@ fun GreetingText(message: String, from: String, modifier: Modifier = Modifier) {
 @Composable
 fun GreetingImage(message: String, from: String, modifier: Modifier = Modifier) {
     // Create a box to overlap image and texts
-    Box(modifier) {
+    Box(modifier = modifier.fillMaxSize()) {
         Image(
             painter = painterResource(id = R.drawable.androidparty),
             contentDescription = null,
             contentScale = ContentScale.Crop,
-            alpha = 0.5F
+            alpha = 0.5F,
+            modifier = Modifier.fillMaxSize()
         )
         GreetingText(
             message = message,
