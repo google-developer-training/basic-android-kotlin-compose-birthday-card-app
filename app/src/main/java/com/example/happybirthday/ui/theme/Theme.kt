@@ -30,17 +30,23 @@ import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.platform.LocalView
 import androidx.core.view.WindowCompat
 
+// Define the color scheme for dark mode
 private val DarkColorScheme = darkColorScheme(
     primary = dark_primary,
     secondary = dark_secondary,
     tertiary = dark_tertiary
 )
-
+// Define the color scheme for light mode
 private val LightColorScheme = lightColorScheme(
     primary = light_primary,
     secondary = light_secondary,
     tertiary = light_tertiary
 )
+
+/**
+ * The HappyBirthdayTheme composable applies the app theme based on
+ * system settings.
+ */
 
 @Composable
 fun HappyBirthdayTheme(

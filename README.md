@@ -1,19 +1,15 @@
-Happy Birthday app - Solution Code
-==============================================
+# Birthday Card App
 
-Solution code for the Android Basics with Compose: Add images to your Android app codelab.
+A personalized birthday card app built with Jetpack Compose. 
+Enter the recipient's name, your name, and customize the background 
+to create a unique birthday card.
 
-Introduction
-------------
-In this codelab, you will learn how to add images to your app using an Image Composable.
+## Features
+- Input recipient and sender names.
+- Customize background color.
+- Responsive and dynamic card design.
+- Smooth performance with Jetpack Compose.
 
-Pre-requisites
---------------
-
-You need to know:
-- How to create and run a new app in Android Studio.
-
-Getting Started
----------------
-
-1. Download and run the app.
+## Setup Instructions
+1. Clone the repository:
+   git clone https://github.com/<your-username>/android-birthday-card.git
